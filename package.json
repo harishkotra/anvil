@@ -1,0 +1,16 @@
+{
+  "name": "anvil",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Anvil — an agent that writes its own Python tool and runs it in a capability-scoped sandbox",
+  "scripts": {
+    "dev": "bash scripts/dev.sh",
+    "server": "bash scripts/server.sh",
+    "client": "cd client && ANVIL_API_PORT=${ANVIL_API_PORT:-3001} vite --host 127.0.0.1 --port 5173",
+    "build": "cd client && npm run build",
+    "verify": "bash scripts/verify.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

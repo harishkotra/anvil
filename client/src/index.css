@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-ink-950 text-slate-200 font-mono antialiased;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-ink-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-ink-600 rounded-sm;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-ink-500;
+}
+
+.pane {
+  @apply flex min-h-0 flex-col rounded-md border border-ink-700 bg-ink-900;
+}
+
+.pane-head {
+  @apply flex items-center justify-between gap-2 border-b border-ink-700 bg-ink-850 px-3 py-2;
+}
+
+.pane-title {
+  @apply text-[11px] uppercase tracking-[0.14em] text-slate-400;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 rounded-sm border px-1.5 py-0.5 text-[10px] uppercase tracking-wider;
+}
+
+textarea,
+input,
+select,
+button {
+  font-family: inherit;
+}
+
+/* Prism, retuned for the dark shell. */
+code[class*="language-"],
+pre[class*="language-"] {
+  background: transparent !important;
+  color: #cbd5e1;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.55;
+  text-shadow: none;
+  white-space: pre;
+}
+.token.comment {
+  color: #64748b;
+}
+.token.keyword {
+  color: #c084fc;
+}
+.token.string {
+  color: #86efac;
+}
+.token.number {
+  color: #fbbf24;
+}
+.token.function {
+  color: #22d3ee;
+}
+.token.class-name {
+  color: #fca5a5;
+}
+.token.operator,
+.token.punctuation {
+  color: #94a3b8;
+}
+.token.builtin {
+  color: #67e8f9;
+}
