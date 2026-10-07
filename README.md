@@ -9,6 +9,9 @@ from a menu, the agent writes code, because code is the best language there is f
 computer what to do. Almost everyone shipped the generation half. Nobody shipped the part
 that decides what that code is allowed to do to your machine. Anvil is that part.
 
+<img width="1762" height="1033" alt="Screenshot at Oct 07 23-43-41" src="https://github.com/user-attachments/assets/921d98c6-8331-49cd-9cb1-428e975e634f" />
+
+
 ```
 task ──▶ CodeAgent (smolagents) ──▶ Python tool source
                                         │
